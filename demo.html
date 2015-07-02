@@ -1,0 +1,132 @@
+﻿<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        .microsha-slider {
+            position: relative;
+        }
+
+        .slider-item {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+        }
+
+        .slider-image {
+            background-size: cover;
+            background-position: center;
+            transition-property: left, top;
+            transition-duration: 0.5s;
+            -webkit-transition-property: left, top;
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-property: left, top;
+            -moz-transition-duration: 0.5s;
+            -ms-transition-property: left, top;
+            -ms-transition-duration: 0.5s;
+        }
+
+            .slider-image:before {
+                content: "";
+                border: 2px solid white;
+                width: 146px;
+                height: 146px;
+                position: absolute;
+            }
+
+        .slider-text {
+            opacity: 1;
+            transition-property: opacity;
+            transition-duration: 0.5s;
+            -webkit-transition-property: opacity;
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-property: opacity;
+            -moz-transition-duration: 0.5s;
+            -ms-transition-property: opacity;
+            -ms-transition-duration: 0.5s;
+        }
+
+            .slider-text > div {
+                display: table-cell;
+                width: 150px;
+                height: 150px;
+                vertical-align: middle;
+                text-align: center;
+                color: white;
+                font-weight: bold;
+            }
+
+            .slider-text.hidden {
+                opacity: 0;
+            }
+
+        .bg-color1 {
+            background-color: #bc43d9;
+        }
+
+        .bg-color2 {
+            background-color: #4374d9;
+        }
+
+        .bg-color3 {
+            background-color: #d9d643;
+        }
+
+        .bg-color4 {
+            background-color: #72d943;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="../microsha/src/base.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="microsha-slider">
+        <img src="http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/Beautiful-Wallpapers-14.jpg" />
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQMeB4BOryz_iV71grOApZZX9nFqMQxJR-_12i6WoZE35biGzJ" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMLqa8VAs49a19LGzUWIqdRW4g7eDPsbevt8G8XMgoJr5-fVsR" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9TuxWaAy-dUEe659Pywah_BcprX9MMi5GBxC9YZhmS9NQyrLx" />
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXOmEogGHNgqH-PZ4ojDEb4EmkyfRlB0fKcF8vha6MbcapMhKs" />
+        <img src="http://hdwallpapers.move.pk/wp-content/uploads/2015/03/different-clors-roses1.jpg" />
+        <img src="http://3.bp.blogspot.com/-RRjPiyyOJcI/USIL0BdsQ-I/AAAAAAAAAY8/2GMZxsUVnhc/s1600/happy-holi-wallpapers10.jpg" />
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuhSnvQsFK0kMrHLXBfbgOd2ij1YTdHZvD40TaVp-u_-61EKtb" />
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn_QP8Fwv05tHHimNF9j0z1WhS3ccZbeWdQWzdkJaLMCFm5aJ5Lg" />
+        <img src="http://www.ewalls.ru/wallpapers/ewalls-ru-oboi-21234.jpg" />
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDfKY0jduwfafsyGerY-hY8LVaeKH96CegRSDRltGvqUqnZuoY" />
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFBw12B7_LnZO0m4Gjf08zARiwIwY2KEEdM_fVVi9Tbf4TijQ7Ug" />
+        <img src="http://dayhdwallpapers.com/wp-content/uploads/2014/10/Love-In-Colourful-Hearts-HD-Wallpaper.jpg" />
+        <img src="http://www.arabapps.org/wp-content/uploads/2014/09/icon111.jpg" />
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTq7kApi4-z9UQtiRJhHspaHiYFTBG3DO8vr40SYFd_N0iOetRm" />
+        <div><div class="bg-color1 italic">Simple Text 1</div></div>
+        <div><div class="bg-color2">Simple Text 2</div></div>
+        <div>
+            <div class="bg-color3">
+                Simple Text 3<br />
+                with<br />
+                <a href="/" onclick="return false">link</a>
+            </div>
+        </div>
+        <div><div class="bg-color4">Simple Text 4</div></div>
+        <div><div class="bg-color1 italic">Simple Text 5</div></div>
+        <div>
+            <div class="bg-color2">
+                <p><b>Simple Text 6</b></p>
+                <p class="italic">with</p>
+                <p class="underline">Formating</p>
+            </div>
+        </div>
+        <div><div class="bg-color3">Simple Text 7</div></div>
+        <div><div class="bg-color4">Simple Text 8</div></div>
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>
